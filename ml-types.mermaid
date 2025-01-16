@@ -1,0 +1,13 @@
+graph TB
+    ML[Machine Learning] --> SL[Supervised Learning]
+    ML --> UL[Unsupervised Learning]
+    ML --> RL[Reinforcement Learning]
+    
+    SL --> |"Has labeled data"| SL1["• Classification<br/>• Regression"]
+    UL --> |"No labels needed"| UL1["• Clustering<br/>• Dimensionality Reduction"]
+    RL --> |"Learning through<br/>interaction"| RL1["• Rewards/Penalties<br/>• Environment Feedback"]
+
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px
+    classDef mainType fill:#e1f5fe,stroke:#0277bd,stroke-width:3px
+    
+    class ML,SL,UL,RL mainType
